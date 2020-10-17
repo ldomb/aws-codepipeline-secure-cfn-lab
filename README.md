@@ -1,4 +1,4 @@
-## Using AWS CodePipeline and open source tools for at-scale infrastructure deployment
+## Using AWS CodePipeline and open source tools for secure infrastructure deployment
 
 Welcome AWS enthusiast! This lab is an enahced version of our blog post [Using AWS CodePipeline and open source tools for at-scale infrastructure deployment](https://aws.amazon.com/blogs/opensource/using-aws-codepipeline-and-open-source-tools-for-at-scale-infrastructure-deployment/). 
 
