@@ -1,0 +1,9 @@
+AWS::EC2::Instance IamInstanceProfile == ECInstanceProfile
+AWS::EC2::Instance ImageId == LatestAmiId
+AWS::EC2::Instance InstanceType == /.nano|.micro|.small/
+AWS::EC2::Instance SecurityGroups == ["InstanceSecurityGroup"]
+AWS::EC2::Instance UserData == {"Fn::Base64":"#!/bin/bash -xe\nexport INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)\necho \"Hello from EC2 instance $INSTANCE_ID\" > hello.txt\naws s3 cp hello.txt s3://${S3BucketName}\n"}
+AWS::EC2::SecurityGroup GroupDescription == Enable SSH access via port 22
+AWS::EC2::SecurityGroup SecurityGroupIngress == [{"CidrIp":"10.15.45.31/32","FromPort":22,"IpProtocol":"tcp","ToPort":22}]
+AWS::IAM::InstanceProfile Path == /
+AWS::IAM::InstanceProfile Roles == ["EC2IamRoleName"]
