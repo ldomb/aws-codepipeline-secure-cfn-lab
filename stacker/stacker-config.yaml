@@ -6,7 +6,7 @@ stacker_execution_profile: &stacker_execution_profile stacker_execution
 stacker_bucket: ""  # not using S3 buckets to store CloudFormation templates
 
 # any unique S3 bucket - suggestion: append your account id and region to the name
-s3_bucket_name: &s3_bucket_name cposssamples3bucket182743192031
+s3_bucket_name: &s3_bucket_name cfnsecsamples3bucket182743192031
 # cheapest EC2 instance for testing purposes
 ec2_instance_type: &ec2_instance_type t2.micro
 
