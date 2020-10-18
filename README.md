@@ -6,6 +6,8 @@ Join us to build a serverless infrastructure deployment pipeline using AWS devel
 
 Our main goal is to show how straightforward it is to integrate OSS tools and AWS Code services such as AWS CodePipeline, CodeBuild, and CodeCommit. 
 
+![alt text](https://github.com/ldomb/aws-codepipeline-secure-cfn-lab/blob/master/cfnseclab.jpg?raw=true)
+
 The Lab guide is also available in the repository
 
 ## License
